@@ -1,0 +1,39 @@
+body {
+    background-color: #100808;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+div {
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+        background-color: #45a049;
+    }
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+    background-color: yellow;
+    color: #000;
+}
