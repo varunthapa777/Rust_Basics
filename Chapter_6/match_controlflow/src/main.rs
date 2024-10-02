@@ -34,6 +34,14 @@ fn main() {
         Some(i) => println!("The value is: {}", i),
         None => println!("The value is: None"),
     }
+
+    let dice_roll = 5;
+    match dice_roll {
+        6 => get_started(),
+        1 => one_more_chance(),
+        1..=6 => println!("Good luck"),
+        _ => (),
+    }
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
@@ -52,4 +60,11 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
         None => None,
         Some(i) => Some(i + 1),
     }
+}
+
+fn one_more_chance() {
+    println!("Roll the dice again");
+}
+fn get_started() {
+    println!("Piece go to start position");
 }
